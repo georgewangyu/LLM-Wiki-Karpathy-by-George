@@ -8,6 +8,7 @@ LLM and a human can both operate reliably.
 ## Layer Contract
 
 - `raw/` holds source artifacts or source pointers.
+- `wiki/log.md` holds chronological milestones and decisions.
 - `wiki/` holds maintained synthesis pages.
 - `wiki/overview.md` is the first entry point.
 
@@ -18,7 +19,7 @@ Do not collapse raw and synthesis into one layer.
 1. User instructions in chat
 2. This file (`AGENTS.md`)
 3. `CLAUDE.md` or `CLAW.md`
-4. Repository docs (`README.md`, `wiki/`)
+4. Repository docs (`README.md`, `docs/`, `wiki/`)
 
 ## Canonical Behavior
 
@@ -41,10 +42,18 @@ Do not collapse raw and synthesis into one layer.
 ## Update Loop
 
 1. Capture new source in `raw/` (or add source references).
-2. Update affected pages in `wiki/`.
-3. Update `updated` date in frontmatter for changed pages.
-4. Ensure `wiki/overview.md` links reflect current page set.
-5. If structural issues are discovered, add them to `IMPROVEMENTS.md`.
+2. Append one concise milestone to `wiki/log.md`.
+3. Update affected pages in `wiki/`.
+4. Update `updated` date in frontmatter for changed pages.
+5. Ensure `wiki/overview.md` links reflect current page set.
+6. If structural issues are discovered, add them to `IMPROVEMENTS.md`.
+
+## Autologging Contract
+
+- Autolog after each substantive chat or work block.
+- Include date, topic, concise summary, and optional source refs.
+- Use `scripts/autolog_wiki_log.py` or equivalent integration.
+- Do not autolog trivial chatter.
 
 ## Public-Safe Rules
 

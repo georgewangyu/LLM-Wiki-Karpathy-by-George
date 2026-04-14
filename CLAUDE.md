@@ -11,12 +11,15 @@ clarity, correctness, and maintainability.
 
 1. `AGENTS.md`
 2. `README.md`
-3. `wiki/overview.md`
-4. target page(s) being edited
+3. `docs/PHILOSOPHY.md`
+4. `docs/WORKFLOW.md`
+5. `wiki/overview.md`
+6. target page(s) being edited
 
 ## Decision Rules
 
 - Source of truth for raw evidence is `raw/` and referenced external sources.
+- Source of truth for chronology is `wiki/log.md`.
 - Source of truth for maintained synthesis is `wiki/`.
 - If evidence and synthesis conflict, update synthesis and preserve source refs.
 - If uncertainty is high, add an explicit Open Question rather than guessing.
@@ -27,6 +30,7 @@ clarity, correctness, and maintainability.
 - Preserve frontmatter structure and update `updated` on modified pages.
 - Use plain markdown and avoid custom syntax that locks users into one tool.
 - Keep section headers consistent across pages where possible.
+- After substantive work, append one log entry before or alongside synthesis updates.
 
 ## Provenance Rules
 

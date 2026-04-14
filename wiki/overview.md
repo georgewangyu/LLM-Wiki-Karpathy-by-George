@@ -13,6 +13,16 @@ tags:
 
 Start here.
 
+## Core Docs
+
+- [Philosophy](../docs/PHILOSOPHY.md)
+- [Workflow](../docs/WORKFLOW.md)
+- [Autologging](../docs/AUTOLOGGING.md)
+
+## Chronology
+
+- [Log](log.md)
+
 ## Topics
 
 - [Page Template](page-template.md)
