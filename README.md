@@ -6,6 +6,20 @@ This repository is intentionally data-free. It captures structure, operating
 contracts, and templates that came out of a real private implementation, but it
 does not include private notes, personal logs, or credentials.
 
+## Quick Start
+
+1. Read `AGENTS.md` for the operating contract.
+2. Open `wiki/overview.md` as the wiki entry point.
+3. Add source notes or source pointers under `raw/`.
+4. Append a milestone to `wiki/log.md`.
+5. Create or update one maintained page in `wiki/` using `wiki/page-template.md`.
+
+Example local log append:
+
+```bash
+python3 scripts/autolog_wiki_log.py --help
+```
+
 ## Why This Exists
 
 A context window is not durable memory.
